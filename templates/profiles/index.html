@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Chmura domowa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        * {
+    box-sizing: border-box;
+        }
+
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #666362;
+        }
+
+        /* Style the header */
+        header {
+    background-color: #E8E5E4;
+            padding: 80px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        .loguj{
+    float: right;
+    position: fixed;
+    top: 0;
+    left:94%;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h2 style="color:black">Chmura domowa</h2>
+</header>
+
+<section id="profile">
+    <div class="container">
+        <div class="row text-center" style="color:whitesmoke">
+            <div class="col-sm-4"><h1>Artur</h1>
+            </div>
+            <div class="col-sm-4"><h1>Tata</h1></div>
+            <div class="col-sm-4"><h1>Mama</h1></div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<a href="{% url 'loguj'%}" class="loguj">Zaloguj</a>
+</body>
+</html>
+
