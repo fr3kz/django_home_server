@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.core.files.storage import FileSystemStorage
 from .models import File as FileModel
-# Create your views here.s
+# Create your views herssse.ss
 def upload(request):
     if request.method == 'POST':
         myfile = request.FILES['myfile']
