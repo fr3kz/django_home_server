@@ -53,16 +53,26 @@
 <section id="profile">
     <div class="container">
         <div class="row text-center" style="color:whitesmoke">
-            <div class="col-sm-4"><h1>Artur</h1>
+            <div class="col-sm-4"><h1>Tata</h1>
+            {% for plik in artur_files %}
+                <a href='' download='{{ plik.upload}}'>{{ plik.upload }}</a><br>
+            {% endfor %}
             </div>
-            <div class="col-sm-4"><h1>Tata</h1></div>
-            <div class="col-sm-4"><h1>Mama</h1></div>
+            <div class="col-sm-4"><h1>Artur</h1>
+             {% for plik in tata_files %}
+                 <a href='' download='{{ plik.upload}}'>{{ plik.upload }}</a><br>
+            {% endfor %}
+            </div>
+            <div class="col-sm-4"><h1>Mama</h1>
+             {% for plik in mama_files %}
+                 <a href='' download='{{ plik.upload}}'>{{ plik.upload }}</a><br>
+            {% endfor %}
+            </div>
         </div>
     </div>
     </div>
 </section>
 
-<a href="{% url 'loguj'%}" class="loguj">Zaloguj</a>
 </body>
 </html>
 
